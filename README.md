@@ -109,20 +109,24 @@ git push -u origin main
 
 ---
 
-## 5. Placeholders to Fill (Before Sharing Widely)
+## 5. Visual Assets & Screenshots
 
-The website is 100% functional and production-ready today. When you are ready to insert your sanitized screenshots, here is the list of placeholder slots:
+The marketplace case study contains 8 prototype screenshots (`assets/images/marketplace-*.jpg`):
+- **Figure 1:** Home & Discovery Architecture (`marketplace-01-home.jpg`)
+- **Figure 2:** Hardware Listings & Protocol Filters (`marketplace-02-listing.jpg`)
+- **Figure 3:** Hardware Verification & Technical Badging (`marketplace-03-verified.jpg`)
+- **Figure 4:** Brand Directory & OEM Ecosystem (`marketplace-04-brands.jpg`)
+- **Figure 5:** Product Detail Page & Technical Specifications (`marketplace-05-product.jpg`)
+- **Figure 6:** B2B Multi-Item Cart & Standard Billing (`marketplace-06-cart.jpg`)
+- **Figure 7:** GST-Ready Multi-Item Checkout (`marketplace-07-checkout.jpg`)
+- **Figure 8:** Phase 1 AI-Enabled Search Assistant (`marketplace-08-ai-assistant.jpg`)
 
-| File | Slot | Current Placeholder | Recommended Asset / Action |
+Optional placeholders for future updates:
+| File | Section | Current Status | Recommended Asset |
 | :--- | :--- | :--- | :--- |
-| `marketplace.html` | Figure 1 | Advanced Search & Verified Filter | Save sanitized screenshot to `assets/images/marketplace-v2-search.png` (1200&times;800) and update `<img>` tag. |
-| `marketplace.html` | Figure 2 | Product Detail Page (PDP) & Specs | Save sanitized screenshot to `assets/images/marketplace-v2-pdp.png` (1200&times;800) and update `<img>` tag. |
-| `marketplace.html` | Figure 3 | GST-Ready B2B Multi-Item Checkout | Save sanitized screenshot to `assets/images/marketplace-v2-checkout.png` (1200&times;800) and update `<img>` tag. |
-| `marketplace.html` | Figure 4 | AI Search & WhatsApp Bot (Phase 1) | Save sanitized screenshot to `assets/images/marketplace-v2-ai-bot.png` (1200&times;800) and update `<img>` tag. |
-| `fireflies.html` | Figure 1 | Extracted Commitments View | Add screenshot from Lovable prototype to `assets/images/fireflies-screen-1.png`. |
-| `fireflies.html` | Figure 2 | Owner Consent & Dependency Tag | Add screenshot from Lovable prototype to `assets/images/fireflies-screen-2.png`. |
-| `fireflies.html` | Figure 3 | Daily Morning Digest | Add screenshot from Lovable prototype to `assets/images/fireflies-screen-3.png`. |
-| `assets/resume/` | Resume PDF | `Jayesh_Parihar_Google_APM_Resume.pdf` | The included PDF is generated to match all requirements and hard rules. If you ever update it in LaTeX/Word, save it to this exact path. |
+| `fireflies.html` | Figure 1 | Extracted Commitments View | Screen from Lovable prototype |
+| `fireflies.html` | Figure 2 | Owner Consent & Dependency Tag | Screen from Lovable prototype |
+| `fireflies.html` | Figure 3 | Morning Daily Digest | Screen from Lovable prototype |
 
 ---
 

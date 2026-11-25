@@ -251,6 +251,11 @@ p3_title = '<b>Zomato Tier-1 Delivery Optimization</b> &bull; [<a href=\"https:/
 story.append(Paragraph(p3_title, role_title))
 story.append(Paragraph("&bull; Deconstructed 7-stage consumer checkout funnel; mapped 8 prioritized initiatives across an impact vs effort matrix and constructed a full North Star metric tree.", project_sub_style))
 
+# Project 4: QuickBite
+p4_title = '<b>QuickBite Scalable System Design Brief</b> &bull; [<a href="https://jayeshpariharr.github.io/portfolio/assets/docs/QuickBite_Scalable_System_Design.pdf" color="#1d4ed8"><u>13-Page Design Brief</u></a>]'
+story.append(Paragraph(p4_title, role_title))
+story.append(Paragraph("&bull; Architected progressive scaling roadmap (5K to 2M users); specified data models, least-connections routing, and cache stampede mitigations.", project_sub_style))
+
 # 5. Skills Section (SEPARATE)
 story.append(Spacer(1, 1.4 * spacer_scale))
 story.append(Paragraph("SKILLS", section_heading))

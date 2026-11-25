@@ -146,4 +146,60 @@
       observer.observe(section);
     });
   }
+
+  // --------------------------------------------------------------------------
+  // Resume Preview Modal (Read before downloading)
+  // --------------------------------------------------------------------------
+  const resumeModal = document.getElementById('resume-modal');
+  const resumeTriggers = document.querySelectorAll('.js-open-resume');
+  const resumeCloseBtn = document.getElementById('resume-modal-close');
+  const resumeCancelBtn = document.getElementById('resume-modal-cancel');
+  let previouslyFocusedElement = null;
+
+  function openResumeModal(e) {
+    if (e) e.preventDefault();
+    if (!resumeModal) return;
+    previouslyFocusedElement = document.activeElement;
+    resumeModal.classList.add('is-open');
+    resumeModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    if (resumeCloseBtn) {
+      resumeCloseBtn.focus();
+    }
+  }
+
+  function closeResumeModal() {
+    if (!resumeModal) return;
+    resumeModal.classList.remove('is-open');
+    resumeModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (previouslyFocusedElement && typeof previouslyFocusedElement.focus === 'function') {
+      previouslyFocusedElement.focus();
+    }
+  }
+
+  resumeTriggers.forEach(function (btn) {
+    btn.addEventListener('click', openResumeModal);
+  });
+
+  if (resumeCloseBtn) {
+    resumeCloseBtn.addEventListener('click', closeResumeModal);
+  }
+  if (resumeCancelBtn) {
+    resumeCancelBtn.addEventListener('click', closeResumeModal);
+  }
+
+  if (resumeModal) {
+    resumeModal.addEventListener('click', function (e) {
+      if (e.target === resumeModal) {
+        closeResumeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && resumeModal.classList.contains('is-open')) {
+        closeResumeModal();
+      }
+    });
+  }
 })();

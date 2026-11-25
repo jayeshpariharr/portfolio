@@ -1,6 +1,6 @@
-# Jayesh Parihar &mdash; Associate Product Manager Portfolio
+# Jayesh Parihar &mdash; Product Manager Portfolio
 
-Production-ready, high-performance personal portfolio website for **Jayesh Parihar**, applying to Google's Associate Product Manager (APM) program.
+Production-ready, high-performance personal portfolio website for **Jayesh Parihar**, Aspiring Product Manager.
 
 Designed for a 30-second mobile recruiter scan: immediate positioning, bold proof points, verifiable product artifacts, and clean editorial typography.
 
@@ -44,7 +44,7 @@ jayeshpariharr.github.io/
     │   ├── og-image.png        # 1200x630 Open Graph preview image
     │   └── favicon.svg         # Vector favicon asset
     └── resume/
-        └── Jayesh_Parihar_Google_APM_Resume.pdf  # 1-page PDF resume
+        └── Jayesh_Parihar_Resume.pdf  # 1-page PDF resume (Universal PM / APM)
 ```
 
 ---

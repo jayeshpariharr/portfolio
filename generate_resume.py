@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Resume PDF Generator for Jayesh Parihar - Google APM Candidate
+Resume PDF Generator for Jayesh Parihar - Aspiring Product Manager
 Generates a full 1-page high-density, professional PDF resume with:
 - Clickable links for header, case studies, prototypes, and artifacts
 - Dedicated separate SKILLS and EDUCATION sections
@@ -9,13 +9,15 @@ Generates a full 1-page high-density, professional PDF resume with:
 """
 
 import sys
+import os
+import shutil
 import subprocess
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable
 
-pdf_path = "/home/jayesh/.gemini/antigravity/scratch/jayeshpariharr.github.io/assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf"
+pdf_path = "/home/jayesh/.gemini/antigravity/scratch/jayeshpariharr.github.io/assets/resume/Jayesh_Parihar_Resume.pdf"
 
 doc = SimpleDocTemplate(
     pdf_path,
@@ -163,7 +165,7 @@ story = []
 
 # 1. Header
 story.append(Paragraph("JAYESH PARIHAR", title_style))
-story.append(Paragraph("Aspiring Associate Product Manager &bull; B2B Marketplaces, SaaS &amp; AI Products", subtitle_style))
+story.append(Paragraph("Aspiring Product Manager &bull; B2B Marketplaces, SaaS &amp; AI Products", subtitle_style))
 
 contact_text = (
     'Vapi, India &bull; '
@@ -286,3 +288,10 @@ story.append(edu_table)
 
 doc.build(story)
 print("Built PDF successfully at:", pdf_path)
+
+# Create compatibility copies
+resume_dir = os.path.dirname(pdf_path)
+for alias in ["Jayesh_Parihar_Product_Manager_Resume.pdf", "Jayesh_Parihar_APM_Resume.pdf", "Jayesh_Parihar_Google_APM_Resume.pdf"]:
+    dest = os.path.join(resume_dir, alias)
+    shutil.copyfile(pdf_path, dest)
+    print("Created copy:", dest)

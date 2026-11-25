@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayesh Parihar | B2B Sales Development &amp; Business Development Portfolio</title>
+  <meta name="description" content="Jayesh Parihar - B2B Sales Development & Business Development professional with 4 years of experience across US, EMEA and APAC. 15+ meetings/mo, 108% quota attainment, $324.6K pipeline built.">
+  <meta name="author" content="Jayesh Parihar">
+  <meta name="theme-color" content="#0a192f">
+
+  <style>
+    /* ==========================================================================
+       CSS Reset & Variables (Navy & White Theme System)
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Light Mode Palette: Navy and White */
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --bg-tertiary: #f1f5f9;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --card-hover-border: #93c5fd;
+      --card-hover-shadow: 0 12px 24px -6px rgba(10, 25, 47, 0.08), 0 4px 8px -4px rgba(10, 25, 47, 0.04);
+      --card-shadow: 0 1px 3px 0 rgba(10, 25, 47, 0.05), 0 1px 2px -1px rgba(10, 25, 47, 0.05);
+
+      --text-primary: #0a192f;   /* Classic Deep Navy */
+      --text-secondary: #334155; /* Slate */
+      --text-muted: #64748b;     /* Cool Grey */
+      --text-invert: #ffffff;
+
+      --navy-900: #0a192f;
+      --navy-800: #0f2744;
+      --navy-700: #1e3a8a;
+      --navy-600: #2563eb;
+      --navy-50: #eff6ff;
+
+      --accent-primary: #1e40af;
+      --accent-hover: #1d4ed8;
+      --accent-subtle: #eff6ff;
+      --accent-border: #bfdbfe;
+
+      --badge-bg: #e0e7ff;
+      --badge-text: #1e3a8a;
+      --badge-border: #c7d2fe;
+
+      --metric-color: #0f2744;
+      --metric-accent: #2563eb;
+
+      --nav-bg: rgba(255, 255, 255, 0.9);
+      --nav-border: #e2e8f0;
+
+      --code-bg: #f8fafc;
+      --code-border: #e2e8f0;
+
+      --timeline-line: #cbd5e1;
+      --timeline-dot: #1e40af;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+
+      --transition-fast: 0.15s ease;
+      --transition-normal: 0.25s ease;
+
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    [data-theme="dark"] {
+      /* Dark Mode Palette: Midnight Navy Night */
+      --bg-primary: #070d19;      /* Midnight Deep Navy */
+      --bg-secondary: #0b1329;    /* Deep Surface Navy */
+      --bg-tertiary: #101c38;     /* Navy Elevated Surface */
+      --card-bg: #0d172e;
+      --card-border: #1e2e4f;
+      --card-hover-border: #38bdf8;
+      --card-hover-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.6), 0 0 16px -2px rgba(56, 189, 248, 0.12);
+      --card-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.35);
+
+      --text-primary: #f8fafc;    /* Crisp White */
+      --text-secondary: #cbd5e1;  /* Soft Light Slate */
+      --text-muted: #94a3b8;      /* Slate */
+      --text-invert: #0a192f;
+
+      --navy-900: #f8fafc;
+      --navy-800: #e2e8f0;
+      --navy-700: #93c5fd;
+      --navy-600: #60a5fa;
+      --navy-50: #101c38;
+
+      --accent-primary: #38bdf8;  /* Electric Sky Cyan */
+      --accent-hover: #7dd3fc;
+      --accent-subtle: rgba(56, 189, 248, 0.1);
+      --accent-border: rgba(56, 189, 248, 0.25);
+
+      --badge-bg: rgba(30, 58, 138, 0.35);
+      --badge-text: #93c5fd;
+      --badge-border: rgba(59, 130, 246, 0.4);
+
+      --metric-color: #f8fafc;
+      --metric-accent: #38bdf8;
+
+      --nav-bg: rgba(7, 13, 25, 0.9);
+      --nav-border: #1e2e4f;
+
+      --code-bg: #091224;
+      --code-border: #1e2e4f;
+
+      --timeline-line: #1e2e4f;
+      --timeline-dot: #38bdf8;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      transition: background-color var(--transition-normal), color var(--transition-normal);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Target offset for sticky header */
+    section[id] {
+      scroll-margin-top: 5.25rem;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-primary);
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-primary);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    a:hover {
+      color: var(--accent-hover);
+    }
+
+    /* Utility Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      border: 1px solid var(--badge-border);
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #10b981;
+      display: inline-block;
+      animation: pulseDot 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    /* Section Headers */
+    .section-header {
+      margin-bottom: 2.75rem;
+    }
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-primary);
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+      margin-bottom: 0.75rem;
+    }
+    .section-desc {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 700px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all var(--transition-fast);
+      min-height: 44px;
+      user-select: none;
+    }
+    .btn-primary {
+      background-color: var(--text-primary);
+      color: var(--bg-primary);
+      border-color: var(--text-primary);
+    }
+    .btn-primary:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(10, 25, 47, 0.15);
+      color: var(--bg-primary);
+    }
+    .btn-secondary {
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+      border-color: var(--card-border);
+    }
+    .btn-secondary:hover {
+      background-color: var(--bg-tertiary);
+      border-color: var(--accent-primary);
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      background-color: transparent;
+      color: var(--text-primary);
+      border-color: var(--card-border);
+    }
+    .btn-outline:hover {
+      background-color: var(--accent-subtle);
+      border-color: var(--accent-primary);
+      color: var(--accent-primary);
+    }
+    .btn-sm {
+      padding: 0.45rem 0.85rem;
+      font-size: 0.85rem;
+      min-height: 36px;
+    }
+
+    /* Icon system */
+    .icon {
+      width: 18px;
+      height: 18px;
+      stroke-width: 2;
+      stroke: currentColor;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       Navigation (Sticky Bar)
+       ========================================================================== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--nav-border);
+      transition: background-color var(--transition-normal), border-color var(--transition-normal);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-decoration: none;
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, #0a192f 0%, #1e3a8a 100%);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: -0.05em;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    [data-theme="dark"] .brand-mark {
+      background: linear-gradient(135deg, #1e3a8a 0%, #38bdf8 100%);
+      color: #070d19;
+    }
+
+    .brand-meta {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-name {
+      line-height: 1.2;
+      font-size: 1.05rem;
+    }
+    .brand-subtitle {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 1.35rem;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color var(--transition-fast);
+      padding: 0.25rem 0;
+    }
+    .nav-link:hover {
+      color: var(--accent-primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle {
+      background: transparent;
+      border: 1px solid var(--card-border);
+      color: var(--text-primary);
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .theme-toggle:hover {
+      background-color: var(--bg-tertiary);
+      border-color: var(--accent-primary);
+    }
+
+    /* Mobile Hamburger */
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--card-border);
+      color: var(--text-primary);
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 68px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--bg-primary);
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--card-border);
+      z-index: 999;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .mobile-nav.open {
+      display: flex;
+    }
+    .mobile-nav a {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--bg-tertiary);
+    }
+
+    /* ==========================================================================
+       SECTION 1: HERO
+       ========================================================================== */
+    .hero-section {
+      padding: 5rem 0 4.5rem;
+      background: radial-gradient(circle at 80% 20%, var(--accent-subtle) 0%, transparent 60%);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .hero-content {
+      max-width: 880px;
+    }
+
+    .hero-status-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-name {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .hero-headline {
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      font-weight: 600;
+      color: var(--navy-700);
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+    [data-theme="dark"] .hero-headline {
+      color: var(--accent-primary);
+    }
+
+    .hero-quote-box {
+      border-left: 4px solid var(--navy-700);
+      padding: 1rem 1.25rem;
+      background-color: var(--bg-secondary);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-bottom: 2rem;
+    }
+    [data-theme="dark"] .hero-quote-box {
+      border-left-color: var(--accent-primary);
+      background-color: var(--bg-tertiary);
+    }
+
+    .hero-quote-text {
+      font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+      font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .hero-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.25rem;
+    }
+    .hero-chip {
+      background-color: var(--bg-tertiary);
+      border: 1px solid var(--card-border);
+      color: var(--text-secondary);
+      padding: 0.35rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    /* ==========================================================================
+       SECTION 2: RESULTS AT A GLANCE (Stat Cards)
+       ========================================================================== */
+    .results-section {
+      padding: 5rem 0;
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .stat-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--card-hover-shadow);
+      border-color: var(--card-hover-border);
+    }
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--navy-700), var(--accent-primary));
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+    }
+    .stat-card:hover::after {
+      opacity: 1;
+    }
+
+    .stat-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .stat-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .stat-number-wrap {
+      margin-bottom: 0.5rem;
+    }
+    .stat-number {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      font-weight: 800;
+      font-family: var(--font-mono);
+      letter-spacing: -0.04em;
+      color: var(--metric-color);
+      line-height: 1.1;
+      display: inline-block;
+    }
+    .stat-accent {
+      color: var(--metric-accent);
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-bottom: 0.35rem;
+    }
+    .stat-subtext {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       SECTION 3: EXPERIENCE
+       ========================================================================== */
+    .experience-section {
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .timeline {
+      position: relative;
+      margin-left: 0.5rem;
+      padding-left: 2rem;
+      border-left: 2px solid var(--timeline-line);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.75rem;
+    }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: -2rem;
+      top: 0.25rem;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: var(--timeline-dot);
+      border: 3px solid var(--bg-primary);
+      box-shadow: 0 0 0 2px var(--timeline-line);
+      transition: transform var(--transition-fast);
+    }
+    .timeline-item:hover .timeline-marker {
+      transform: translateX(-50%) scale(1.25);
+    }
+
+    .experience-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--card-shadow);
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
+    .experience-card:hover {
+      border-color: var(--card-hover-border);
+      box-shadow: var(--card-hover-shadow);
+    }
+
+    .exp-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .exp-title-block {
+      flex: 1;
+      min-width: 260px;
+    }
+    .exp-role {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+    .exp-company {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy-700);
+    }
+    [data-theme="dark"] .exp-company {
+      color: var(--accent-primary);
+    }
+
+    .exp-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.35rem;
+    }
+    .exp-date {
+      font-size: 0.85rem;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      color: var(--text-muted);
+      background-color: var(--bg-secondary);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--card-border);
+    }
+    .exp-scope-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--badge-text);
+      background-color: var(--badge-bg);
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .exp-bullets {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .exp-bullet {
+      position: relative;
+      padding-left: 1.35rem;
+      font-size: 0.98rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+    .exp-bullet::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--accent-primary);
+    }
+    .exp-bullet strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       SECTION 4: HOW I SELL
+       ========================================================================== */
+    .how-i-sell-section {
+      padding: 5rem 0;
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .sell-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .sell-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      gap: 1.25rem;
+      transition: transform var(--transition-normal), border-color var(--transition-normal);
+    }
+    .sell-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--card-hover-border);
+    }
+
+    .sell-num {
+      font-family: var(--font-mono);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--accent-primary);
+      background-color: var(--accent-subtle);
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid var(--accent-border);
+    }
+
+    .sell-content h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+    }
+    .sell-content p {
+      font-size: 0.98rem;
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================================================
+       SECTION 5: SAMPLE OUTREACH [Placeholder Section]
+       ========================================================================== */
+    .outreach-section {
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .placeholder-notice {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      padding: 1rem 1.25rem;
+      background-color: var(--accent-subtle);
+      border: 1px solid var(--accent-border);
+      border-radius: var(--radius-md);
+      margin-bottom: 2rem;
+    }
+    .placeholder-notice p {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .outreach-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .email-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .email-card-header {
+      padding: 1.25rem 1.5rem;
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .email-framework-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .email-target-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+    }
+
+    .email-card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .email-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .email-field-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+    .email-field-content {
+      background-color: var(--code-bg);
+      border: 1px solid var(--code-border);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 0.85rem;
+      font-family: var(--font-sans);
+      color: var(--text-primary);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .email-field-content.subject {
+      font-weight: 600;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+    }
+
+    .email-card-footer {
+      padding: 1rem 1.5rem;
+      background-color: var(--bg-secondary);
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    /* ==========================================================================
+       SECTION 6: TOOLS & AI
+       ========================================================================== */
+    .tools-section {
+      padding: 5rem 0;
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+
+    .tool-group-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+    }
+    .tool-group-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .tool-group-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .tool-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .tool-pill {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--card-border);
+      color: var(--text-primary);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: border-color var(--transition-fast), background-color var(--transition-fast);
+    }
+    .tool-pill:hover {
+      border-color: var(--accent-primary);
+      background-color: var(--accent-subtle);
+    }
+
+    /* ==========================================================================
+       SECTION 7: PRODUCT-MINDED EXTRAS
+       ========================================================================== */
+    .extras-section {
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .pm-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: var(--card-shadow);
+      position: relative;
+    }
+
+    .pm-card-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .pm-program-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .pm-program-badge {
+      font-size: 0.8rem;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      border: 1px solid var(--badge-border);
+    }
+
+    .pm-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .pm-project-item {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+    .pm-project-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+    .pm-project-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .pm-takeaway {
+      background-color: var(--accent-subtle);
+      border-left: 3px solid var(--accent-primary);
+      padding: 1rem 1.25rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       SECTION 8: CONTACT
+       ========================================================================== */
+    .contact-section {
+      padding: 5.5rem 0;
+      background: radial-gradient(circle at 50% 100%, var(--accent-subtle) 0%, transparent 60%);
+    }
+
+    .contact-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      box-shadow: var(--card-shadow);
+      text-align: center;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      margin-bottom: 1rem;
+    }
+
+    .contact-pitch {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 620px;
+      margin: 0 auto 2.25rem;
+      line-height: 1.6;
+    }
+
+    .contact-methods {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 2.25rem;
+      text-align: left;
+    }
+
+    .contact-method-item {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      transition: border-color var(--transition-fast);
+    }
+    .contact-method-item:hover {
+      border-color: var(--card-hover-border);
+    }
+
+    .contact-method-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .contact-method-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      word-break: break-all;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      border-top: 1px solid var(--card-border);
+      background-color: var(--bg-secondary);
+      padding: 2.5rem 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: 1.25rem;
+      list-style: none;
+    }
+    .footer-nav a {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .footer-nav a:hover {
+      color: var(--accent-primary);
+    }
+
+    /* ==========================================================================
+       TOAST NOTIFICATION (Copy feedback)
+       ========================================================================== */
+    .toast {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background-color: var(--navy-900);
+      color: var(--text-invert);
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 9999;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: all 0.25s ease;
+      pointer-events: none;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-actions .btn-contact-nav {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: flex;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sell-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .outreach-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pm-projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-methods {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-section {
+        padding: 3.5rem 0 3rem;
+      }
+
+      .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .exp-meta {
+        align-items: flex-start;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+      .footer-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    /* Print styles */
+    @media print {
+      .navbar, .theme-toggle, .mobile-menu-btn, .btn, .footer-nav, .toast {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .stat-card, .experience-card, .sell-card, .email-card, .pm-card {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       STICKY TOP NAVIGATION
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand" aria-label="Jayesh Parihar Home">
+        <div class="brand-mark">JP</div>
+        <div class="brand-meta">
+          <span class="brand-name">Jayesh Parihar</span>
+          <span class="brand-subtitle">B2B Sales Development &amp; Business Development</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#results" class="nav-link">Results</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#how-i-sell" class="nav-link">How I Sell</a></li>
+          <li><a href="#outreach" class="nav-link">Outreach</a></li>
+          <li><a href="#tools" class="nav-link">Tools &amp; AI</a></li>
+          <li><a href="#extras" class="nav-link">PM Extras</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg id="themeIconSun" class="icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" class="icon" viewBox="0 0 24 24" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Quick Contact Link -->
+        <a href="#contact" class="btn btn-primary btn-sm btn-contact-nav">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open mobile navigation menu">
+          <svg class="icon" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileNav" class="mobile-nav">
+      <a href="#results" class="mobile-nav-link">Results at a Glance</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#how-i-sell" class="mobile-nav-link">How I Sell</a>
+      <a href="#outreach" class="mobile-nav-link">Sample Outreach</a>
+      <a href="#tools" class="mobile-nav-link">Tools &amp; AI</a>
+      <a href="#extras" class="mobile-nav-link">Product-Minded Extras</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: HERO
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          
+          <div class="hero-status-wrap">
+            <span class="badge">
+              <span class="badge-dot"></span>
+              Open to SDR, BDR &amp; Business Development Roles
+            </span>
+            <span class="hero-chip">4 Years B2B Experience</span>
+            <span class="hero-chip">US • EMEA • APAC</span>
+          </div>
+
+          <h1 class="hero-name">Jayesh Parihar</h1>
+          
+          <h2 class="hero-headline">
+            B2B Sales Development &amp; Business Development | Technology, SaaS &amp; Marketplaces
+          </h2>
+
+          <div class="hero-quote-box">
+            <p class="hero-quote-text">
+              &ldquo;I book senior-level meetings, build pipeline and turn customer conversations into revenue.&rdquo;
+            </p>
+          </div>
+
+          <div class="hero-chips">
+            <span class="hero-chip">2,500+ Outbound Touches/Mo</span>
+            <span class="hero-chip">15+ Qualified Meetings/Mo</span>
+            <span class="hero-chip">Senior Discovery (VP Sales, Directors, CMOs, C-Level)</span>
+            <span class="hero-chip">Weekly A/B Testing</span>
+          </div>
+
+          <div class="hero-actions">
+            <!-- Download Resume [Link Placeholder] -->
+            <a href="Jayesh_Parihar_Sales_Resume.pdf" download="Jayesh_Parihar_Sales_Resume.pdf" class="btn btn-primary" id="downloadResumeBtn">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/jayeshparihar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:pariharjayesh1092@gmail.com" class="btn btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+
+            <!-- Copy Email Button -->
+            <button type="button" class="btn btn-outline" onclick="copyText('pariharjayesh1092@gmail.com', 'Email copied: pariharjayesh1092@gmail.com')" title="Copy email address to clipboard">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: RESULTS AT A GLANCE (Stat Cards)
+         ========================================================================== -->
+    <section id="results" class="results-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Proven Proof</span>
+          <h2 class="section-title">Results at a Glance</h2>
+          <p class="section-desc">
+            Direct, verifiable performance metrics across outbound execution, quota achievement, pipeline creation, and revenue closed.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          
+          <!-- Card 1 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Meeting Generation</span>
+              <span class="badge">SDR Execution</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="15" data-suffix="+">15+</span>
+            </div>
+            <div class="stat-label">15+ qualified meetings booked per month</div>
+            <div class="stat-subtext">Consistently generated with VP Sales, directors, CMOs and C-level buyers</div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Outbound Cadence</span>
+              <span class="badge">Volume &amp; Scale</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="2500" data-suffix="+" data-format="comma">2,500+</span>
+            </div>
+            <div class="stat-label">2,500+ outbound touches per month</div>
+            <div class="stat-subtext">Sustained multi-channel outbound cadence across phone, email, and social</div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Conversion Optimization</span>
+              <span class="badge">Weekly Testing</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number stat-accent">+35%</span>
+            </div>
+            <div class="stat-label">35% lift in qualified meetings, 6% lift in reply rate (weekly A/B tests)</div>
+            <div class="stat-subtext">Continuous weekly experimentation across value propositions, hooks, and CTAs</div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Pipeline Generated</span>
+              <span class="badge">US • EMEA • APAC</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number">$324.6K</span>
+            </div>
+            <div class="stat-label">$324.6K pipeline built</div>
+            <div class="stat-subtext">Generated across US, EMEA and APAC markets at Mobility Foresights</div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Enterprise Quota</span>
+              <span class="badge">Mobility Foresights</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="98" data-suffix="%">98%</span>
+            </div>
+            <div class="stat-label">98% of quota reached (Mobility Foresights)</div>
+            <div class="stat-subtext">Closed 17 enterprise deals ($58K) managing Fortune 1000 accounts</div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Performance Turnaround</span>
+              <span class="badge">99acres.com</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number stat-accent">108%</span>
+            </div>
+            <div class="stat-label">108% quarterly quota attainment, up from 78% (99acres.com)</div>
+            <div class="stat-subtext">Engineered quota turnaround by restructuring corporate discovery</div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Playbook Execution</span>
+              <span class="badge">BYJU'S</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number stat-accent">92%</span>
+            </div>
+            <div class="stat-label">92% quarterly quota attainment, up from 58% (BYJU'S)</div>
+            <div class="stat-subtext">Built an objection-handling playbook; closed INR 29 lakh revenue</div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Logo Acquisition</span>
+              <span class="badge">Corporate Sales</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="30" data-suffix="+">30+</span>
+            </div>
+            <div class="stat-label">30+ new B2B logos won</div>
+            <div class="stat-subtext">Expanded corporate customer base at 99acres.com through targeted prospecting</div>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-tag">Founding Team Revenue</span>
+              <span class="badge">Founding Team</span>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-number">INR 2.5 Cr</span>
+            </div>
+            <div class="stat-label">INR 2.5 Cr (~$295K) closed in 6 months on a founding team</div>
+            <div class="stat-subtext">B2B fleet-telematics marketplace, including one INR 60 lakh marquee deal</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: EXPERIENCE (Timeline, Newest First)
+         ========================================================================== -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Career Progression</span>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-desc">
+            4 years of result-focused B2B sales and business development experience across US SaaS, enterprise market intelligence, corporate marketplaces, and technology ventures.
+          </p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Role 1: Founding Team Member -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <article class="experience-card">
+              <div class="exp-header">
+                <div class="exp-title-block">
+                  <h3 class="exp-role">Founding Team Member, Business Development &amp; Product</h3>
+                  <div class="exp-company">B2B Fleet-Telematics Marketplace</div>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date">Apr 2026 - Present, client confidential</span>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li class="exp-bullet">
+                  Ran discovery and onboarding with <strong>50+ system integrators</strong>.
+                </li>
+                <li class="exp-bullet">
+                  Helped close <strong>INR 2.5 Cr in 6 months</strong> including one <strong>INR 60 lakh deal</strong>.
+                </li>
+                <li class="exp-bullet">
+                  Wrote a PRD with <strong>12 prioritized requirements</strong>.
+                </li>
+                <li class="exp-bullet">
+                  Built the prototype the UI team used as the reference for the final design.
+                </li>
+                <li class="exp-bullet">
+                  Tracked pipeline in <strong>HubSpot</strong>.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Role 2: SDR US B2B SaaS -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <article class="experience-card">
+              <div class="exp-header">
+                <div class="exp-title-block">
+                  <h3 class="exp-role">Sales Development Representative</h3>
+                  <div class="exp-company">US B2B SaaS client</div>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date">Jun 2025 - Mar 2026, $2.4K-$4.8K ACV</span>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li class="exp-bullet">
+                  Booked <strong>15+ qualified meetings a month from 2,500+ monthly touches</strong>.
+                </li>
+                <li class="exp-bullet">
+                  Ran discovery with <strong>VP Sales, directors, CMOs and C-level buyers</strong>.
+                </li>
+                <li class="exp-bullet">
+                  Lifted qualified meetings <strong>35% via weekly A/B tests</strong>.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Role 3: Mobility Foresights -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <article class="experience-card">
+              <div class="exp-header">
+                <div class="exp-title-block">
+                  <h3 class="exp-role">Business Development Manager</h3>
+                  <div class="exp-company">Mobility Foresights</div>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date">Oct 2024 - Jan 2025</span>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li class="exp-bullet">
+                  Closed <strong>17 enterprise deals ($58K)</strong>; reached 98% of quota.
+                </li>
+                <li class="exp-bullet">
+                  Built <strong>$324.6K pipeline across US, EMEA, APAC</strong>.
+                </li>
+                <li class="exp-bullet">
+                  Managed Fortune 1000 accounts (<strong>Sony, Samsung, Hitachi, Siemens</strong>).
+                </li>
+                <li class="exp-bullet">
+                  Multi-threaded into <strong>C-level stakeholders</strong>.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Role 4: 99acres.com -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <article class="experience-card">
+              <div class="exp-header">
+                <div class="exp-title-block">
+                  <h3 class="exp-role">Assistant Manager, Corporate Sales</h3>
+                  <div class="exp-company">99acres.com</div>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date">Nov 2023 - Jun 2024</span>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li class="exp-bullet">
+                  Restructured discovery, quota attainment <strong>78% to 108%</strong>.
+                </li>
+                <li class="exp-bullet">
+                  Won <strong>30+ new B2B logos</strong>.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Role 5: BYJU'S -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <article class="experience-card">
+              <div class="exp-header">
+                <div class="exp-title-block">
+                  <h3 class="exp-role">Business Development Associate</h3>
+                  <div class="exp-company">BYJU'S</div>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date">Nov 2022 - Aug 2023</span>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li class="exp-bullet">
+                  Built an objection-handling playbook.
+                </li>
+                <li class="exp-bullet">
+                  Quota attainment <strong>58% to 92%</strong>.
+                </li>
+                <li class="exp-bullet">
+                  <strong>INR 29 lakh</strong> closed revenue.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: HOW I SELL (3 to 4 short cards)
+         ========================================================================== -->
+    <section id="how-i-sell" class="how-i-sell-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Repeatable Process</span>
+          <h2 class="section-title">How I Sell</h2>
+          <p class="section-desc">
+            A disciplined outbound framework focused on thorough qualification, executive alignment, and continuous testing.
+          </p>
+        </div>
+
+        <div class="sell-grid">
+          
+          <!-- Card 1 -->
+          <article class="sell-card">
+            <div class="sell-num">01</div>
+            <div class="sell-content">
+              <h3>Research first</h3>
+              <p>
+                <strong>Research first:</strong> account and stakeholder mapping before outreach. I profile the account structure, identify key champions and economic buyers, and pinpoint company initiatives before crafting the first touch.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="sell-card">
+            <div class="sell-num">02</div>
+            <div class="sell-content">
+              <h3>Discovery over pitching</h3>
+              <p>
+                <strong>Discovery over pitching:</strong> questions with senior buyers. Instead of leading with feature checklists, I run structured discovery with VP Sales, Directors, CMOs, and C-level buyers to uncover operational bottlenecks.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="sell-card">
+            <div class="sell-num">03</div>
+            <div class="sell-content">
+              <h3>Test everything</h3>
+              <p>
+                <strong>Test everything:</strong> A/B testing messaging and CTAs weekly. Iterating subject lines, problem hooks, and friction-free CTAs every week lifted meetings booked by 35% and reply rates by 6%.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="sell-card">
+            <div class="sell-num">04</div>
+            <div class="sell-content">
+              <h3>Multi-thread</h3>
+              <p>
+                <strong>Multi-thread:</strong> reach several decision makers, including C-level. De-risk deals and accelerate pipeline momentum by coordinating simultaneously across executive sponsors, department heads, and technical evaluators.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: SAMPLE OUTREACH [Placeholder Section]
+         ========================================================================== -->
+    <section id="outreach" class="outreach-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Outbound Frameworks</span>
+          <h2 class="section-title">Sample Outreach</h2>
+          <p class="section-desc">
+            Example cold email frameworks designed for senior B2B decision makers.
+          </p>
+        </div>
+
+        <!-- Note banner required by user request -->
+        <div class="placeholder-notice">
+          <svg class="icon" style="color: var(--accent-primary); margin-top: 2px;" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <p>
+            <strong>Replace with your own real sequence.</strong> Note: These 2 example cold email frameworks illustrate structured outbound: clear subject line, relevant opening hook, quantified value proposition, and low-friction CTA.
+          </p>
+        </div>
+
+        <div class="outreach-grid">
+          
+          <!-- Framework 1: Executive Alignment / Account Trigger -->
+          <article class="email-card">
+            <div class="email-card-header">
+              <span class="email-framework-title">Cold Email Framework 1: Executive Trigger</span>
+              <span class="email-target-tag">Target: VP Sales / C-Level</span>
+            </div>
+            <div class="email-card-body">
+              <div class="email-field">
+                <span class="email-field-label">Subject Line</span>
+                <div class="email-field-content subject">
+                  {{Company}} pipeline vs. {{Primary Growth Priority}}
+                </div>
+              </div>
+              <div class="email-field">
+                <span class="email-field-label">Opening</span>
+                <div class="email-field-content">
+                  Hi {{FirstName}}, noticed {{Company}} is scaling its outbound team across {{Region}} based on your recent expansion announcement.
+                </div>
+              </div>
+              <div class="email-field">
+                <span class="email-field-label">Value</span>
+                <div class="email-field-content">
+                  Most revenue leaders we speak with find rep ramp time and inconsistent multi-threading bottleneck their qualified meetings in Q1. We helped {{Peer Company}} lift qualified meeting conversion by 35% without adding headcount.
+                </div>
+              </div>
+              <div class="email-field">
+                <span class="email-field-label">CTA</span>
+                <div class="email-field-content">
+                  Open to reviewing a 2-minute breakdown of how they structured the cadence, or bad timing this week?
+                </div>
+              </div>
+            </div>
+            <div class="email-card-footer">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyFramework('fw1')">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy Framework</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Framework 2: Problem-Specific / Multi-Threading -->
+          <article class="email-card">
+            <div class="email-card-header">
+              <span class="email-framework-title">Cold Email Framework 2: Problem Diagnostic</span>
+              <span class="email-target-tag">Target: Directors &amp; Functional Leads</span>
+            </div>
+            <div class="email-card-body">
+              <div class="email-field">
+                <span class="email-field-label">Subject Line</span>
+                <div class="email-field-content subject">
+                  {{FirstName}} - idea for {{Specific Inefficiency / Funnel Bottleneck}}
+                </div>
+              </div>
+              <div class="email-field">
+                <span class="email-field-label">Opening</span>
+                <div class="email-field-content">
+                  Hi {{FirstName}}, caught your recent post regarding team goals around {{Specific Initiative}} at {{Company}}.
+                </div>
+              </div>
+              <div class="email-field">
+                <span class="email-field-label">Value</span>
+                <div class="email-field-content">
+                  When teams manage this in-house, discovery qualification often drops below 60% due to friction in {{Specific Workflow}}. We put together a lightweight playbook that helped teams like {{Similar Company}} increase quarterly attainment to 108%.
+                </div>
+              </div>
+              <div class="email-field">
+                <span class="email-field-label">CTA</span>
+                <div class="email-field-content">
+                  Worth exploring for 5 minutes to see if the same applies to {{Company}}, or would next month make more sense?
+                </div>
+              </div>
+            </div>
+            <div class="email-card-footer">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="copyFramework('fw2')">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy Framework</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: TOOLS & AI
+         ========================================================================== -->
+    <section id="tools" class="tools-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Core Competencies</span>
+          <h2 class="section-title">Tools &amp; AI</h2>
+          <p class="section-desc">
+            Technical and operational tool stack used to execute high-volume outbound, analyze pipeline metrics, and automate sales workflows.
+          </p>
+        </div>
+
+        <div class="tools-grid">
+          
+          <!-- Category 1: CRM & Pipeline -->
+          <article class="tool-group-card">
+            <div class="tool-group-header">
+              <svg class="icon" style="color: var(--accent-primary);" viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <h3 class="tool-group-title">CRM &amp; Sales Ops</h3>
+            </div>
+            <div class="tool-pills">
+              <span class="tool-pill">HubSpot</span>
+            </div>
+          </article>
+
+          <!-- Category 2: Analytics & Data -->
+          <article class="tool-group-card">
+            <div class="tool-group-header">
+              <svg class="icon" style="color: var(--accent-primary);" viewBox="0 0 24 24">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <h3 class="tool-group-title">Analytics &amp; Data</h3>
+            </div>
+            <div class="tool-pills">
+              <span class="tool-pill">SQL</span>
+              <span class="tool-pill">Mixpanel</span>
+              <span class="tool-pill">Google Analytics</span>
+              <span class="tool-pill">Excel/Google Sheets</span>
+            </div>
+          </article>
+
+          <!-- Category 3: AI & Automation -->
+          <article class="tool-group-card">
+            <div class="tool-group-header">
+              <svg class="icon" style="color: var(--accent-primary);" viewBox="0 0 24 24">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              </svg>
+              <h3 class="tool-group-title">AI &amp; Workflows</h3>
+            </div>
+            <div class="tool-pills">
+              <span class="tool-pill">Claude</span>
+              <span class="tool-pill">Claude Code</span>
+              <span class="tool-pill">ChatGPT</span>
+              <span class="tool-pill">Gemini</span>
+              <span class="tool-pill">n8n</span>
+              <span class="tool-pill">prompt engineering</span>
+              <span class="tool-pill">AI-assisted workflows</span>
+            </div>
+          </article>
+
+          <!-- Category 4: Collaboration & Product -->
+          <article class="tool-group-card">
+            <div class="tool-group-header">
+              <svg class="icon" style="color: var(--accent-primary);" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+              </svg>
+              <h3 class="tool-group-title">Collaboration</h3>
+            </div>
+            <div class="tool-pills">
+              <span class="tool-pill">Jira</span>
+              <span class="tool-pill">Notion</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: PRODUCT-MINDED EXTRAS (Brief)
+         ========================================================================== -->
+    <section id="extras" class="extras-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Strategic Perspective</span>
+          <h2 class="section-title">Product-Minded Extras</h2>
+          <p class="section-desc">
+            Product discovery and customer research capabilities that strengthen sales qualification and pipeline quality.
+          </p>
+        </div>
+
+        <article class="pm-card">
+          <div class="pm-card-top">
+            <div>
+              <h3 class="pm-program-name">Airtribe AI-First PM Program (2026)</h3>
+              <p style="font-size: 0.95rem; margin-top: 0.25rem;">Customer interviews, user research, and funnel analysis</p>
+            </div>
+            <span class="pm-program-badge">Discovery &amp; Analytics</span>
+          </div>
+
+          <div class="pm-projects-grid">
+            
+            <div class="pm-project-item">
+              <h4 class="pm-project-title">Fireflies.ai Capstone</h4>
+              <p class="pm-project-desc">
+                Fireflies.ai capstone with <strong>19 customer interviews</strong> to uncover core workflow friction and user discovery insights.
+              </p>
+            </div>
+
+            <div class="pm-project-item">
+              <h4 class="pm-project-title">Zomato Funnel Analysis</h4>
+              <p class="pm-project-desc">
+                <strong>Zomato funnel analysis</strong> to diagnose user drop-off bottlenecks and model conversion optimizations.
+              </p>
+            </div>
+
+            <div class="pm-project-item">
+              <h4 class="pm-project-title">VitaFit Retention Strategy</h4>
+              <p class="pm-project-desc">
+                <strong>VitaFit retention strategy</strong> focused on user engagement loops and onboarding milestone retention.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="pm-takeaway">
+            <strong>Why this matters for sales development:</strong> Rigorous user discovery directly elevates discovery calls with senior buyers—asking diagnostic questions that reveal business pain rather than pitching feature lists.
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: CONTACT
+         ========================================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        
+        <div class="contact-card">
+          <span class="badge" style="margin-bottom: 1.25rem;">Open to Opportunities</span>
+          <h2 class="contact-title">Contact</h2>
+          <p class="contact-pitch">
+            I am actively exploring SDR, BDR, and Business Development opportunities across high-growth B2B SaaS, technology, and marketplace companies. If you need a proven producer who books senior meetings and builds pipeline, let&rsquo;s get in touch.
+          </p>
+
+          <div class="contact-methods">
+            
+            <!-- Email -->
+            <div class="contact-method-item">
+              <span class="contact-method-label">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Email
+              </span>
+              <a href="mailto:pariharjayesh1092@gmail.com" class="contact-method-value">
+                pariharjayesh1092@gmail.com
+              </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-method-item">
+              <span class="contact-method-label">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                LinkedIn
+              </span>
+              <a href="https://linkedin.com/in/jayeshparihar" target="_blank" rel="noopener noreferrer" class="contact-method-value">
+                linkedin.com/in/jayeshparihar
+              </a>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-method-item">
+              <span class="contact-method-label">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Location
+              </span>
+              <span class="contact-method-value">
+                Vapi, India
+              </span>
+            </div>
+
+          </div>
+
+          <div class="contact-actions">
+            <!-- Mailto Button -->
+            <a href="mailto:pariharjayesh1092@gmail.com" class="btn btn-primary">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Send Email</span>
+            </a>
+
+            <!-- Copy Email Button -->
+            <button type="button" class="btn btn-secondary" onclick="copyText('pariharjayesh1092@gmail.com', 'Email copied to clipboard!')">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+
+            <!-- LinkedIn Link -->
+            <a href="https://linkedin.com/in/jayeshparihar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <!-- Download Resume -->
+            <a href="Jayesh_Parihar_Sales_Resume.pdf" download="Jayesh_Parihar_Sales_Resume.pdf" class="btn btn-outline">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <strong>Jayesh Parihar</strong> &copy; 2026. All rights reserved.
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#hero">Back to Top</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#how-i-sell">How I Sell</a></li>
+        <li><a href="#outreach">Outreach</a></li>
+        <li><a href="#tools">Tools &amp; AI</a></li>
+        <li><a href="#extras">PM Extras</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Toast for Copy Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <svg class="icon" viewBox="0 0 24 24">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMsg">Copied!</span>
+  </div>
+
+  <!-- ==========================================================================
+       SCRIPTS (Light/Dark Toggle, Mobile Nav, Stat Animations, Copy Helpers)
+       ========================================================================== -->
+  <script>
+    (function() {
+      // 1. Theme Management (Light / Dark Mode with Navy & White palette)
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const themeIconSun = document.getElementById('themeIconSun');
+      const themeIconMoon = document.getElementById('themeIconMoon');
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('sales_portfolio_theme', theme);
+        if (theme === 'dark') {
+          themeIconSun.style.display = 'none';
+          themeIconMoon.style.display = 'block';
+        } else {
+          themeIconSun.style.display = 'block';
+          themeIconMoon.style.display = 'none';
+        }
+      }
+
+      // Detect saved theme or system preference
+      const savedTheme = localStorage.getItem('sales_portfolio_theme');
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        applyTheme('dark');
+      } else {
+        applyTheme('light');
+      }
+
+      themeToggleBtn.addEventListener('click', function() {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+      });
+
+      // 2. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      mobileMenuBtn.addEventListener('click', function() {
+        mobileNav.classList.toggle('open');
+      });
+
+      mobileNavLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          mobileNav.classList.remove('open');
+        });
+      });
+
+      // 3. Subtle Animated Stat Numbers
+      const statElements = document.querySelectorAll('.stat-number[data-target]');
+      let statsAnimated = false;
+
+      function animateStatNumbers() {
+        if (statsAnimated) return;
+        statElements.forEach(function(el) {
+          const target = parseInt(el.getAttribute('data-target'), 10);
+          const suffix = el.getAttribute('data-suffix') || '';
+          const format = el.getAttribute('data-format');
+          let current = 0;
+          const step = Math.max(1, Math.floor(target / 40));
+          const interval = setInterval(function() {
+            current += step;
+            if (current >= target) {
+              current = target;
+              clearInterval(interval);
+            }
+            if (format === 'comma') {
+              el.textContent = current.toLocaleString() + suffix;
+            } else {
+              el.textContent = current + suffix;
+            }
+          }, 30);
+        });
+        statsAnimated = true;
+      }
+
+      if ('IntersectionObserver' in window) {
+        const statsObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              animateStatNumbers();
+              statsObserver.disconnect();
+            }
+          });
+        }, { threshold: 0.2 });
+
+        const resultsSection = document.getElementById('results');
+        if (resultsSection) {
+          statsObserver.observe(resultsSection);
+        }
+      } else {
+        // Fallback for older browsers
+        animateStatNumbers();
+      }
+
+      // 4. Download Resume handler with feedback
+      const downloadResumeBtn = document.getElementById('downloadResumeBtn');
+      if (downloadResumeBtn) {
+        downloadResumeBtn.addEventListener('click', function() {
+          setTimeout(function() {
+            showToast('Downloading resume...');
+          }, 300);
+        });
+      }
+    })();
+
+    // 5. Toast Notification System
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(function() {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    // 6. Generic Copy To Clipboard
+    function copyText(text, successMsg) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function() {
+          showToast(successMsg || 'Copied to clipboard!');
+        }).catch(function() {
+          fallbackCopyText(text, successMsg);
+        });
+      } else {
+        fallbackCopyText(text, successMsg);
+      }
+    }
+
+    function fallbackCopyText(text, successMsg) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-999999px';
+      textArea.style.top = '-999999px';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showToast(successMsg || 'Copied to clipboard!');
+      } catch (err) {
+        showToast('Please copy: ' + text);
+      }
+      document.body.removeChild(textArea);
+    }
+
+    // 7. Copy Outreach Frameworks
+    function copyFramework(id) {
+      let content = "";
+      if (id === 'fw1') {
+        content = 
+`Subject: {{Company}} pipeline vs. {{Primary Growth Priority}}
+
+Hi {{FirstName}},
+
+Noticed {{Company}} is scaling its outbound team across {{Region}} based on your recent expansion announcement.
+
+Most revenue leaders we speak with find rep ramp time and inconsistent multi-threading bottleneck their qualified meetings in Q1. We helped {{Peer Company}} lift qualified meeting conversion by 35% without adding headcount.
+
+Open to reviewing a 2-minute breakdown of how they structured the cadence, or bad timing this week?
+
+Best,
+Jayesh Parihar`;
+      } else if (id === 'fw2') {
+        content = 
+`Subject: {{FirstName}} - idea for {{Specific Inefficiency / Funnel Bottleneck}}
+
+Hi {{FirstName}},
+
+Caught your recent post regarding team goals around {{Specific Initiative}} at {{Company}}.
+
+When teams manage this in-house, discovery qualification often drops below 60% due to friction in {{Specific Workflow}}. We put together a lightweight playbook that helped teams like {{Similar Company}} increase quarterly attainment to 108%.
+
+Worth exploring for 5 minutes to see if the same applies to {{Company}}, or would next month make more sense?
+
+Best,
+Jayesh Parihar`;
+      }
+      copyText(content, 'Framework copied to clipboard!');
+    }
+  </script>
+</body>
+</html>

@@ -40,8 +40,9 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* Layout */
-  --container-max: 1100px;
-  --container-reading: 780px;
+  --container-max: 1240px;
+  --container-wide: 1400px;
+  --container-reading: 820px;
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
@@ -221,8 +222,8 @@ button {
   max-width: var(--container-max);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .container-narrow {
@@ -1761,6 +1762,102 @@ button {
     content: " (" attr(href) ")";
     font-size: 85%;
     font-weight: normal;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Desktop & Wide Screen Scaling
+   Utilizes full desktop real estate with balanced margins and rich hierarchy
+   -------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 4.25rem 0 3.75rem 0;
+  }
+  .hero-name {
+    font-size: 3.25rem;
+  }
+  .hero-headline {
+    font-size: 1.5rem;
+  }
+  .hero-subline {
+    font-size: 1.125rem;
+    max-width: 980px;
+  }
+  .hero-proof-chips {
+    gap: 1.25rem;
+    margin: 1.75rem 0 2rem 0;
+  }
+  .proof-chip {
+    padding: 1.25rem 1.35rem;
+  }
+  .proof-chip-stat {
+    font-size: 1.45rem;
+  }
+  .experience-item {
+    padding: 2rem 2.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .proof-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+  .proof-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .proof-card-body {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --container-max: 1360px;
+  }
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .hero-section {
+    padding: 4.75rem 0 4.25rem 0;
+  }
+  .hero-name {
+    font-size: 3.5rem;
+  }
+  .hero-headline {
+    font-size: 1.6rem;
+  }
+  .proof-card {
+    padding: 1.75rem;
+  }
+  .experience-item {
+    padding: 2.25rem 2.5rem;
+  }
+  .case-body-layout {
+    grid-template-columns: 280px 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  :root {
+    --container-max: 1480px;
+  }
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .proof-cards-grid {
+    gap: 1.5rem;
+  }
+  .proof-chip {
+    padding: 1.5rem 1.65rem;
+  }
+  .experience-item {
+    padding: 2.5rem 2.75rem;
   }
 }
 

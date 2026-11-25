@@ -1350,6 +1350,83 @@ button {
   gap: 0.5rem;
 }
 
+/* Screen Showcase Frames */
+.screen-showcase {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: 2rem 0;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.screen-showcase:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.screen-showcase-bar {
+  background-color: var(--bg-muted);
+  border-bottom: 1px solid var(--border-light);
+  padding: 0.5rem 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.screen-showcase-dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.screen-showcase-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--border-strong);
+}
+
+.screen-showcase-title {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%;
+}
+
+.screen-showcase-img-wrap {
+  background-color: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-light);
+  overflow: hidden;
+  line-height: 0;
+}
+
+.screen-showcase-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.screen-showcase:hover .screen-showcase-img {
+  transform: scale(1.01);
+}
+
+.screen-showcase-caption {
+  padding: 0.9rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-card);
+  line-height: 1.5;
+}
+
+.screen-showcase-caption strong {
+  color: var(--text-primary);
+}
+
 /* Screen Placeholder Frame */
 .screen-placeholder {
   background-color: var(--bg-card);

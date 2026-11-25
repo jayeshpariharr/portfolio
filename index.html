@@ -159,9 +159,9 @@
 
           <!-- Hero Action Buttons -->
           <div class="btn-group">
-            <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" download="Jayesh_Parihar_Google_APM_Resume.pdf" class="btn btn-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Download resume (PDF)
+            <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" class="btn btn-primary js-open-resume" role="button" aria-haspopup="dialog" aria-controls="resume-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              View resume (PDF)
             </a>
             <a href="https://linkedin.com/in/jayeshparihar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -515,9 +515,9 @@
           </div>
 
           <div class="btn-group" style="justify-content: center;">
-            <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" download="Jayesh_Parihar_Google_APM_Resume.pdf" class="btn btn-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Download Resume (PDF)
+            <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" class="btn btn-primary js-open-resume" role="button" aria-haspopup="dialog" aria-controls="resume-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              View Resume (PDF)
             </a>
             <a href="mailto:pariharjayesh1092@gmail.com" class="btn btn-secondary">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -529,6 +529,48 @@
     </section>
 
   </main>
+
+  <!-- Resume Preview Modal (Read before download) -->
+  <div id="resume-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-text">
+          <h3 id="resume-modal-title" class="modal-title">Jayesh Parihar &mdash; Resume</h3>
+          <p class="modal-subtitle">Aspiring Associate Product Manager &bull; 1-Page Summary</p>
+        </div>
+        <div class="modal-header-actions">
+          <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" download="Jayesh_Parihar_Google_APM_Resume.pdf" class="btn btn-primary btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download PDF
+          </a>
+          <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm modal-newtab-btn" title="Open in new tab">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            New Tab
+          </a>
+          <button type="button" class="modal-close-btn" id="resume-modal-close" aria-label="Close resume preview">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <iframe src="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf#toolbar=0&navpanes=0&scrollbar=1" title="Jayesh Parihar APM Resume Preview" class="modal-pdf-frame">
+          <p style="padding: 2rem; text-align: center; color: var(--text-secondary);">Your browser does not support embedded PDF viewing. You can <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" download="Jayesh_Parihar_Google_APM_Resume.pdf" style="color: var(--accent); font-weight: 600;">download the resume PDF</a> or <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600;">open it in a new tab</a>.</p>
+        </iframe>
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-footer-note">Optimized for Google APM Program &bull; 1 Page</span>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary btn-sm" id="resume-modal-cancel">Close</button>
+          <a href="assets/resume/Jayesh_Parihar_Google_APM_Resume.pdf" download="Jayesh_Parihar_Google_APM_Resume.pdf" class="btn btn-primary btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Site Footer -->
   <footer class="site-footer" role="contentinfo">

@@ -236,18 +236,18 @@ story.append(Paragraph("PRODUCT PROJECTS (AIRTRIBE AI-FIRST PM PROGRAM, 2026, CO
 story.append(HRFlowable(width="100%", thickness=0.5, color=LINE_COLOR, spaceAfter=2))
 
 # Project 1: Fireflies
-p1_title = '<b>Fireflies.ai Commitment Cards (Individual Capstone, Concept Only)</b> &bull; [<a href=\"https://prototype-jayeshparihar-fireflies.lovable.app/\" color=\"#1d4ed8\"><u>Interactive Prototype</u></a>] &bull; [<a href=\"https://docs.google.com/videos/d/1QSgAdmdterJbTSX83XRY1lEwKf9WvQEogKgqtLzk15k/play?usp=sharing\" color=\"#1d4ed8\"><u>Walkthrough Video</u></a>] &bull; [<a href=\"https://jayeshpariharr.github.io/portfolio/fireflies.html\" color=\"#1d4ed8\"><u>Case Study</u></a>]'
+p1_title = '<b>Fireflies.ai Commitment Cards (Individual Capstone, Concept Only)</b> &bull; [<a href=\"https://prototype-jayeshparihar-fireflies.lovable.app/\" color=\"#1d4ed8\"><u>Interactive Prototype</u></a>] &bull; [<a href=\"https://jayeshpariharr.github.io/portfolio/assets/docs/Fireflies_Commitment_Cards_PRD.pdf\" color=\"#1d4ed8\"><u>PRD Document</u></a>] &bull; [<a href=\"https://jayeshpariharr.github.io/portfolio/fireflies.html\" color=\"#1d4ed8\"><u>Case Study</u></a>]'
 story.append(Paragraph(p1_title, role_title))
 story.append(Paragraph("&bull; Uncovered commitment visibility as the top user breakage (8 of 19 interviews across 3 companies) behind a 28% 14-day task resolution rate on real sales calls.", project_sub_style))
 story.append(Paragraph("&bull; Ranked 14 solutions using RICE, defined North Star (14-day resolution rate, 45% target), established guardrails, authored complete PRD, 17-slide deck, and built 6-screen interactive Lovable prototype.", project_sub_style))
 
 # Project 2: VitaFit
-p2_title = '<b>VitaFit User Retention PRD</b> &bull; [<a href=\"https://drive.google.com/drive/folders/1rIzEcnZ0xjpjdly0ufFX32RzvtFI2Ymj?usp=sharing\" color=\"#1d4ed8\"><u>PRD &amp; Test Plan</u></a>]'
+p2_title = '<b>VitaFit User Retention (StayFit+ &amp; Momentum PRDs)</b> &bull; [<a href=\"https://jayeshpariharr.github.io/portfolio/assets/docs/VitaFit_StayFit_PRD_Design.pdf\" color=\"#1d4ed8\"><u>StayFit+ PRD</u></a>] &bull; [<a href=\"https://jayeshpariharr.github.io/portfolio/assets/docs/VitaFit_Momentum_PRD.pdf\" color=\"#1d4ed8\"><u>Momentum PRD</u></a>]'
 story.append(Paragraph(p2_title, role_title))
 story.append(Paragraph("&bull; Diagnosed steep day 14&ndash;21 habit drop-off; engineered streak-recovery mechanics with a 5% beta rollout, 6-week A/B testing plan, and explicit ship/no-ship guardrails.", project_sub_style))
 
 # Project 3: Zomato
-p3_title = '<b>Zomato 7-Stage Funnel Optimization</b> &bull; [<a href=\"https://drive.google.com/drive/folders/1Mhw-GRTe4l4HuhK_TYTQovmaXfUU87gH?usp=sharing\" color=\"#1d4ed8\"><u>Funnel Analysis &amp; Metric Tree</u></a>]'
+p3_title = '<b>Zomato Tier-1 Delivery Optimization</b> &bull; [<a href=\"https://jayeshpariharr.github.io/portfolio/assets/docs/Zomato_Delivery_Optimization_Deck.pdf\" color=\"#1d4ed8\"><u>10-Slide Deck</u></a>] &bull; [<a href=\"https://jayeshpariharr.github.io/portfolio/assets/docs/Zomato_Delivery_Optimization_PRD.pdf\" color=\"#1d4ed8\"><u>PRD &amp; Metric Tree</u></a>]'
 story.append(Paragraph(p3_title, role_title))
 story.append(Paragraph("&bull; Deconstructed 7-stage consumer checkout funnel; mapped 8 prioritized initiatives across an impact vs effort matrix and constructed a full North Star metric tree.", project_sub_style))
 

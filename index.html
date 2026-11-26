@@ -32,8 +32,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Main Stylesheet (cache-busted) -->
+  <link rel="stylesheet" href="assets/css/style.css?v=20261126-2">
 
   <!-- JSON-LD Structured Data: Person Schema -->
   <script type="application/ld+json">
@@ -72,11 +72,11 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Global Full-Page Plexus Motion Texture Background -->
-  <div class="global-motion-bg" aria-hidden="true">
-    <video class="global-motion-video" id="global-bg-video" autoplay muted loop playsinline preload="auto">
+  <div class="global-motion-bg" aria-hidden="true" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; overflow: hidden; pointer-events: none; z-index: -1;">
+    <video class="global-motion-video" id="global-bg-video" autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: 100vw; height: 100vh; transform: translate(-50%, -50%); object-fit: cover; opacity: 0.42; pointer-events: none;">
       <source src="assets/videos/plexus-motion.mp4" type="video/mp4">
     </video>
-    <div class="global-motion-overlay"></div>
+    <div class="global-motion-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></div>
   </div>
 
   <!-- Header & Navigation -->
@@ -626,6 +626,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20261126-2"></script>
 </body>
 </html>

@@ -472,46 +472,38 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   Hero Section (Above the Fold)
-   Optimized for a 30-second mobile recruiter scan with motion plexus background
+   Global Full-Page Plexus Motion Background
+   Continuous interactive network particles floating across the entire site
    -------------------------------------------------------------------------- */
-.hero-section {
-  position: relative;
-  overflow: hidden;
-  padding: 3.5rem 0 3rem 0;
-  border-bottom: 1px solid var(--border-light);
-  background: var(--bg-surface);
-}
-
-/* Motion Texture Video Background */
-.hero-motion-bg {
-  position: absolute;
+.global-motion-bg {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
+  background-color: var(--bg-page);
 }
 
-.hero-video {
+.global-motion-video {
   position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  opacity: 0.62;
+  opacity: 0.60;
   transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
-.hero-motion-overlay {
+.global-motion-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -520,36 +512,93 @@ button {
   width: 100%;
   height: 100%;
   background: radial-gradient(
-    ellipse 85% 75% at 50% 25%,
-    rgba(255, 255, 255, 0.42) 0%,
-    rgba(255, 255, 255, 0.75) 55%,
-    rgba(255, 255, 255, 0.95) 100%
+    circle at 50% 30%,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0.58) 50%,
+    rgba(255, 255, 255, 0.86) 100%
   );
   pointer-events: none;
 }
 
 /* Dark mode handling for white plexus motion */
-[data-theme="dark"] .hero-section {
-  background: var(--bg-surface);
+[data-theme="dark"] .global-motion-bg {
+  background-color: var(--bg-page);
 }
 
-[data-theme="dark"] .hero-video {
-  filter: invert(1) hue-rotate(185deg) brightness(0.82) contrast(1.18);
-  opacity: 0.38;
+[data-theme="dark"] .global-motion-video {
+  filter: invert(1) hue-rotate(185deg) brightness(0.85) contrast(1.18);
+  opacity: 0.36;
 }
 
-[data-theme="dark"] .hero-motion-overlay {
+[data-theme="dark"] .global-motion-overlay {
   background: radial-gradient(
-    ellipse 85% 75% at 50% 25%,
-    rgba(10, 15, 29, 0.48) 0%,
-    rgba(10, 15, 29, 0.78) 55%,
-    rgba(10, 15, 29, 0.96) 100%
+    circle at 50% 30%,
+    rgba(10, 15, 29, 0.38) 0%,
+    rgba(10, 15, 29, 0.68) 50%,
+    rgba(10, 15, 29, 0.92) 100%
   );
 }
 
-.hero-grid {
+/* Transparent sections so plexus motion flows through entire page */
+.site-header,
+main,
+.hero-section,
+.proof-section,
+.experience-section,
+.work-section,
+.skills-section,
+.education-section,
+.contact-section,
+.site-footer,
+.case-hero,
+.case-body-layout {
   position: relative;
   z-index: 1;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Glassmorphism for content cards to ensure 100% text readability */
+.proof-card,
+.experience-item,
+.work-card,
+.coursework-card,
+.skill-category,
+.education-item,
+.contact-card,
+.case-card,
+.sidebar-card {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
+}
+
+[data-theme="dark"] .proof-card,
+[data-theme="dark"] .experience-item,
+[data-theme="dark"] .work-card,
+[data-theme="dark"] .coursework-card,
+[data-theme="dark"] .skill-category,
+[data-theme="dark"] .education-item,
+[data-theme="dark"] .contact-card,
+[data-theme="dark"] .case-card,
+[data-theme="dark"] .sidebar-card {
+  background-color: rgba(17, 24, 39, 0.84) !important;
+  border-color: rgba(55, 65, 81, 0.85);
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.35);
+}
+
+/* --------------------------------------------------------------------------
+   Hero Section (Above the Fold)
+   Optimized for a 30-second mobile recruiter scan
+   -------------------------------------------------------------------------- */
+.hero-section {
+  padding: 3.5rem 0 3rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;

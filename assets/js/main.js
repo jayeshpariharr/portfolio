@@ -202,4 +202,43 @@
       }
     });
   }
+
+  // --------------------------------------------------------------------------
+  // Hero Background Motion Video & Toggle
+  // --------------------------------------------------------------------------
+  const heroVideo = document.getElementById('hero-bg-video');
+  const motionToggleBtn = document.getElementById('motion-toggle');
+
+  if (heroVideo && motionToggleBtn) {
+    const motionLabel = motionToggleBtn.querySelector('.motion-toggle-label');
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function setMotionState(shouldPlay) {
+      if (shouldPlay) {
+        heroVideo.play().then(function() {
+          motionToggleBtn.classList.remove('is-paused');
+          motionToggleBtn.setAttribute('aria-label', 'Pause background motion');
+          if (motionLabel) motionLabel.textContent = 'Motion ON';
+        }).catch(function() {
+          // Autoplay policy or low battery mode
+        });
+      } else {
+        heroVideo.pause();
+        motionToggleBtn.classList.add('is-paused');
+        motionToggleBtn.setAttribute('aria-label', 'Play background motion');
+        if (motionLabel) motionLabel.textContent = 'Motion OFF';
+      }
+    }
+
+    if (prefersReducedMotion) {
+      setMotionState(false);
+    } else {
+      setMotionState(true);
+    }
+
+    motionToggleBtn.addEventListener('click', function() {
+      const isPaused = heroVideo.paused;
+      setMotionState(isPaused);
+    });
+  }
 })();

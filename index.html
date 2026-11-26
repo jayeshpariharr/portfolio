@@ -112,11 +112,24 @@
 
     <!-- 1. Hero Section (Above the fold, phone-optimized 30s scan) -->
     <section class="hero-section" aria-labelledby="hero-name">
+      <div class="hero-motion-bg" aria-hidden="true">
+        <video class="hero-video" id="hero-bg-video" autoplay muted loop playsinline preload="auto">
+          <source src="assets/videos/plexus-motion.mp4" type="video/mp4">
+        </video>
+        <div class="hero-motion-overlay"></div>
+      </div>
       <div class="container hero-grid">
         <div class="hero-header">
-          <div class="hero-target">
-            <span class="hero-target-dot" aria-hidden="true"></span>
-            <span>Aspiring Product Manager</span>
+          <div class="hero-target-row">
+            <div class="hero-target">
+              <span class="hero-target-dot" aria-hidden="true"></span>
+              <span>Aspiring Product Manager</span>
+            </div>
+            <button type="button" class="motion-toggle-btn" id="motion-toggle" aria-label="Pause background motion" title="Pause/Play background motion">
+              <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span class="motion-toggle-label">Motion ON</span>
+            </button>
           </div>
           <h1 id="hero-name" class="hero-name">Jayesh Parihar</h1>
           <p class="hero-headline">&ldquo;I turn customer conversations into product decisions.&rdquo;</p>
